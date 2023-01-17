@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
         <!-- SWIPER CSS -->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
         <!-- CSS -->
         <link rel="stylesheet" href="assets/css/styles.css">
@@ -140,7 +140,7 @@
                 <span class="section__subtitle">My introduction</span>
 
                 <div class="about__container container grid">
-                    <img src="assets/img/about.png" alt="" class="about__img">
+                    <img src="assets/img/about.png" alt="About Image" class="about__img">
 
                     <div class="about__data">
                         <p class="about__description">
@@ -674,9 +674,83 @@
             </section>
 
             <!--==================== PORTFOLIO ====================-->
-            <!-- <section class="portfolio section" id="portfolio">
-                
-            </section> -->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">My projects :)</span>
+
+                <div class="portfolio__container container swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- PROJECT 1 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio1.png" alt="Portfolio Image 1" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Food Order Management System</h3>
+
+                                <p class="portfolio__description">
+                                    A Laravel web application backed with MySQL and complete with CRUD operations.
+                                    <br>
+                                    &#8226; Laravel, PHP, MySQL, Tailwind CSS
+                                </p>
+
+                                <a href="https://github.com/jasonchn18/laravel-food-ordering-web-app" target="_blank" class="button button--flex button--small portfolio__button">
+                                    Github
+                                    <i class="uil uil-external-link-alt button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- PROJECT 2 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio2.png" alt="Portfolio Image 2" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Drug Addiction Recovery Management System</h3>
+
+                                <p class="portfolio__description">
+                                    A mobile application built with Flutter and Firebase.
+                                    <br>
+                                    &#8226; Flutter, Firebase, Dart
+                                </p>
+
+                                <a href="https://github.com/jasonchn18/drug-addiction-recovery-app" target="_blank" class="button button--flex button--small portfolio__button">
+                                    Github
+                                    <i class="uil uil-external-link-alt button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- PROJECT 3 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio3.png" alt="Portfolio Image 3" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">... and more to come!</h3>
+
+                                <!-- <p class="portfolio__description">
+                                    Project 3 description.
+                                </p>
+
+                                <a href="https://github.com/jasonchn18/" target="_blank" class="button button--flex button--small portfolio__button">
+                                    Github
+                                    <i class="uil uil-external-link-alt button__icon"></i>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Arrows -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
 
             <!--==================== PROJECTS ====================-->
             <!-- <section class="project section">
@@ -702,7 +776,7 @@
         <!-- SCROLL TOP -->
 
         <!-- SWIPER JS -->
-        <script src=""></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
         <!-- MAIN JS -->
         <script src="assets/js/main.js"></script>
