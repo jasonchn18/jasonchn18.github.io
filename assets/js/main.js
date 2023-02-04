@@ -142,6 +142,26 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
     }
 });
 
+/*==================== CONTACT ====================*/
+// Set hyperlink tag as a submit button.
+document.getElementById("contact-submit").onclick = function(e) {
+    document.getElementById("contact-form").submit();
+    document.getElementById("contact-form").reset();
+    // To prevent the page from scrolling to top
+    e.preventDefault();
+}
+
+// Default submit button action
+document.getElementById("contact-form").action = "mailto:jasonchn18@gmail.com";
+
+// If there is input in the Subject field:
+let subject = document.getElementById("contact-form-subject");
+
+document.getElementById("contact-form-subject").onchange = function() {
+    subject = document.getElementById("contact-form-subject");
+    document.getElementById("contact-form").action = "mailto:jasonchn18@gmail.com?Subject="+subject.value;
+}
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
 
