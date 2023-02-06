@@ -397,7 +397,7 @@ img {
 }
 
 .button--white:hover {
-  background-color: #FFF;
+  background-color: hsl(230, 5%, 90%);
 }
 
 .button--flex {
