@@ -206,6 +206,17 @@ function scrollUp() {
 
 window.addEventListener('scroll', scrollUp)
 
+/*==================== HIDE SCROLL DOWN ====================*/ 
+function homeScroll() {
+    const homeScroll = document.getElementById('home-scroll');
+    // When the scroll is higher than 200 viewport height, 
+        // add the hide-home-scroll class to the a tag with the home-scroll id
+    if (this.scrollY >= 250) { homeScroll.classList.add('hide-home-scroll'); }
+    else { homeScroll.classList.remove('hide-home-scroll') }
+}
+
+window.addEventListener('scroll', homeScroll)
+
 /*==================== DARK LIGHT THEME ====================*/ 
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'

@@ -370,6 +370,13 @@ img {
   font-size: 1.25rem;
 }
 
+/* Hide home scroll */
+.hide-home-scroll {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.2s, opacity 0.2s linear;
+}
+
 /*==================== 404 ERROR ====================*/
 .error__buttons {
   display: flex;
@@ -1307,6 +1314,13 @@ img {
     margin-left: 3rem;
   }
 
+  /* Hide home scroll */
+  .hide-home-scroll {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.2s, opacity 0.2s linear;
+  }
+
   .error__title {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -1406,9 +1420,9 @@ img {
     flex-direction: row;
     column-gap: 3rem;
   }
-  .footer__socials {
+  /* .footer__socials { */
     /* justify-self: end; */
-  }
+  /* } */
   .footer__copy {
     margin-top: 4.5rem;
   }
